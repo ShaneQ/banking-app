@@ -1,4 +1,4 @@
-# springboot-banking-app
+# banking-app
 
 
 Banking Springboot app created for DKB Code Factory coding challenge
@@ -7,7 +7,7 @@ Banking Springboot app created for DKB Code Factory coding challenge
 
 For building and running the application you need:
 
-- JDK 1.11
+- JDK 11
 - [Maven 3](https://maven.apache.org)
 
 ## Running the application locally
