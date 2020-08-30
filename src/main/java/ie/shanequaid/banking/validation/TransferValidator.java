@@ -1,7 +1,6 @@
 package ie.shanequaid.banking.validation;
 
 import ie.shanequaid.banking.model.transfer.PaymentTransfer;
-import org.zalando.problem.AbstractThrowableProblem;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
@@ -11,7 +10,7 @@ public class TransferValidator implements
 
 
     @Override
-    public boolean isValid(PaymentTransfer transfer, ConstraintValidatorContext cxt) throws AbstractThrowableProblem {
+    public boolean isValid(PaymentTransfer transfer, ConstraintValidatorContext cxt) {
 
         if (hasSufficientFunds(transfer)) {
             cxt.disableDefaultConstraintViolation();
