@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ie.shanequaid</groupId>
-	<artifactId>toy-banker</artifactId>
+	<artifactId>banking-app</artifactId>
 	<version>0.0.1</version>
 	<name>toy-banker</name>
 	<description>DKB Code Factory Code Challenge</description>
