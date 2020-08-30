@@ -15,7 +15,7 @@ import java.math.BigDecimal;
 public class TransferDepositRequestDTO {
 
     @IbanValidator
-    private String Iban;
+    private String iban;
 
     @NotNull
     @Min(value = 0L, message = "The value must be positive")

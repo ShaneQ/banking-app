@@ -27,8 +27,7 @@ public class TransactionController {
 
     @GetMapping("list/{iban}")
     public List<Transaction> getListByAccount(@Valid @IBAN @PathVariable("iban") String iban) {
-        List<Transaction> list = service.getList(iban);
-        return list;
+        return service.getList(iban);
     }
 
     @GetMapping("list/type/{type}")
@@ -39,7 +38,6 @@ public class TransactionController {
         } catch (IllegalArgumentException ex) {
             throw new AccountTypeProblem();
         }
-        List<AccountTransactionResponseDTO> list = service.getList(accountType);
-        return list;
+        return service.getList(accountType);
     }
 }

@@ -43,12 +43,8 @@ public abstract class Account {
 
     public abstract AccountType getAccountType();
 
-    public boolean canDebitBy(AccountType type) {
-        return true;
-    }
+    public abstract boolean canDebitBy(AccountType type);
 
-    public boolean canCreditBy(AccountType type) {
-        return true;
-    }
+    public abstract boolean canCreditBy(AccountType type);
 
 }

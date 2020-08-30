@@ -19,4 +19,14 @@ public class CheckingAccount extends Account {
         return type;
     }
 
+    @Override
+    public boolean canDebitBy(AccountType type) {
+        return true;
+    }
+
+    @Override
+    public boolean canCreditBy(AccountType type) {
+        return true;
+    }
+
 }

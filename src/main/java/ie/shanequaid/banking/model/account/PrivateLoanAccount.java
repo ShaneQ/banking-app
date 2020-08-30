@@ -26,4 +26,9 @@ public class PrivateLoanAccount extends Account {
         return false;
     }
 
+    @Override
+    public boolean canCreditBy(AccountType type) {
+        return true;
+    }
+
 }

@@ -22,13 +22,13 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 )
 @AutoConfigureMockMvc
 @ActiveProfiles("integration-test")
-public class SwaggerGeneratorTest {
+class SwaggerGeneratorTest {
 
     @Autowired
     private MockMvc mockMvc;
 
     @Test
-    public void generateSwaggerDocs() throws Exception {
+    void generateSwaggerDocs() throws Exception {
         this.mockMvc.perform(get("/v2/api-docs")
                 .accept(MediaType.APPLICATION_JSON))
                 .andDo(mvcResult -> new YAMLMapper().writeValue(

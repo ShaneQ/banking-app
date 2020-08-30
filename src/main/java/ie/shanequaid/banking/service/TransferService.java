@@ -65,8 +65,8 @@ public class TransferService {
         ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
         Validator validator = factory.getValidator();
         Set<ConstraintViolation<PaymentTransfer>> violations = validator.validate(transfer);
-        for (ConstraintViolation<PaymentTransfer> violation : violations) {
-            throw new TransferProblem(violation.getMessage());
+        if(!violations.isEmpty()){
+            throw new TransferProblem(violations.iterator().next().getMessage());
         }
     }
 

@@ -23,4 +23,9 @@ public class SavingsAccount extends Account {
         return type.equals(AccountType.CHECKING);
     }
 
+    @Override
+    public boolean canCreditBy(AccountType type) {
+        return true;
+    }
+
 }
