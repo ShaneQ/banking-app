@@ -1,12 +1,12 @@
 package ie.shanequaid.banking.service;
 
-import ie.shanequaid.banking.dto.TransferDepositRequestDTO;
-import ie.shanequaid.banking.dto.TransferRequestDTO;
-import ie.shanequaid.banking.model.account.Account;
-import ie.shanequaid.banking.model.transaction.Transaction;
-import ie.shanequaid.banking.model.transaction.TransactionType;
-import ie.shanequaid.banking.model.transfer.DepositTransfer;
-import ie.shanequaid.banking.model.transfer.PaymentTransfer;
+import ie.shanequaid.banking.web.model.TransferDepositRequestDTO;
+import ie.shanequaid.banking.web.model.TransferRequestDTO;
+import ie.shanequaid.banking.domain.account.Account;
+import ie.shanequaid.banking.domain.transaction.Transaction;
+import ie.shanequaid.banking.domain.transaction.TransactionType;
+import ie.shanequaid.banking.domain.transfer.DepositTransfer;
+import ie.shanequaid.banking.domain.transfer.PaymentTransfer;
 import ie.shanequaid.banking.problem.TransferProblem;
 import org.springframework.stereotype.Component;
 

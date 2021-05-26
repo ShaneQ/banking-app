@@ -1,7 +1,7 @@
 package ie.shanequaid.banking.repository;
 
-import ie.shanequaid.banking.model.account.Account;
-import ie.shanequaid.banking.model.account.AccountType;
+import ie.shanequaid.banking.domain.account.Account;
+import ie.shanequaid.banking.domain.account.AccountType;
 
 import java.util.List;
 

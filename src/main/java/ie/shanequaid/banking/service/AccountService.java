@@ -1,9 +1,9 @@
 package ie.shanequaid.banking.service;
 
-import ie.shanequaid.banking.dto.AccountBalanceResponseDTO;
-import ie.shanequaid.banking.dto.AccountLockSettingRequestDTO;
-import ie.shanequaid.banking.model.account.Account;
-import ie.shanequaid.banking.model.account.AccountType;
+import ie.shanequaid.banking.web.model.AccountBalanceResponseDTO;
+import ie.shanequaid.banking.web.model.AccountLockSettingRequestDTO;
+import ie.shanequaid.banking.domain.account.Account;
+import ie.shanequaid.banking.domain.account.AccountType;
 import ie.shanequaid.banking.problem.AccountNotFoundProblem;
 import ie.shanequaid.banking.repository.AccountRepository;
 import ie.shanequaid.banking.repository.AccountRepositoryInMemoryImpl;

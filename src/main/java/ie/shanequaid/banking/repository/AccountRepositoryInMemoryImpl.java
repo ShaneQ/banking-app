@@ -1,6 +1,6 @@
 package ie.shanequaid.banking.repository;
 
-import ie.shanequaid.banking.model.account.*;
+import ie.shanequaid.banking.domain.account.*;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

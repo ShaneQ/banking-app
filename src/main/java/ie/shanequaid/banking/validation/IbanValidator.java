@@ -8,6 +8,11 @@ import javax.validation.ConstraintValidatorContext;
 public class IbanValidator implements
         ConstraintValidator<ie.shanequaid.banking.annotation.IbanValidator, String> {
 
+    @Override
+    public void initialize(ie.shanequaid.banking.annotation.IbanValidator ibanValidator) {
+
+    }
+
     /**
      * Imported package has internal NPE, created custom validator to wrap
      **/

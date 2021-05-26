@@ -1,6 +1,6 @@
 package ie.shanequaid.banking.validation;
 
-import ie.shanequaid.banking.model.transfer.PaymentTransfer;
+import ie.shanequaid.banking.domain.transfer.PaymentTransfer;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
@@ -8,6 +8,11 @@ import javax.validation.ConstraintValidatorContext;
 public class TransferValidator implements
         ConstraintValidator<ie.shanequaid.banking.annotation.TransferValidator, PaymentTransfer> {
 
+
+    @Override
+    public void initialize(ie.shanequaid.banking.annotation.TransferValidator transferValidator) {
+
+    }
 
     @Override
     public boolean isValid(PaymentTransfer transfer, ConstraintValidatorContext cxt) {

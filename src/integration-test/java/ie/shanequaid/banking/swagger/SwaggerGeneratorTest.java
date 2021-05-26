@@ -2,7 +2,7 @@ package ie.shanequaid.banking.swagger;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLMapper;
-import ie.shanequaid.banking.configuration.BankingApplication;
+import ie.shanequaid.banking.BankingApplication;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;

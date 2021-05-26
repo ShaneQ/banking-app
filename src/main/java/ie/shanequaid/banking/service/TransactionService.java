@@ -1,9 +1,9 @@
 package ie.shanequaid.banking.service;
 
-import ie.shanequaid.banking.dto.AccountTransactionResponseDTO;
-import ie.shanequaid.banking.model.account.Account;
-import ie.shanequaid.banking.model.account.AccountType;
-import ie.shanequaid.banking.model.transaction.Transaction;
+import ie.shanequaid.banking.web.model.AccountTransactionResponseDTO;
+import ie.shanequaid.banking.domain.account.Account;
+import ie.shanequaid.banking.domain.account.AccountType;
+import ie.shanequaid.banking.domain.transaction.Transaction;
 import org.apache.bval.extras.constraints.checkdigit.IBAN;
 import org.springframework.stereotype.Component;
 
